@@ -17,7 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import *
-from task3.views import *
+# from task3.views import *
+from task4.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +26,5 @@ urlpatterns = [
     path('courses/', courses),
     path('profile', profile),
     path('class/', cls_template.as_view()),
+
 ]
