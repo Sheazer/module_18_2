@@ -19,6 +19,7 @@ from django.urls import path
 from task2.views import *
 # from task3.views import *
 from task4.views import *
+from task5.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,5 +27,6 @@ urlpatterns = [
     path('courses/', courses),
     path('profile', profile),
     path('class/', cls_template.as_view()),
+    path('form/', sign_up_by_django)
 
 ]
